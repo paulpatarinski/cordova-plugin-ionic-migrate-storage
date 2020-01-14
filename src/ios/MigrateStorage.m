@@ -193,10 +193,7 @@
         self.targetPortNumber = DEFAULT_TARGET_PORT_NUMBER;
     }
 
-    self.targetHostname = [cdvSettings cordovaSettingForKey:SETTING_TARGET_HOSTNAME];
-    if([self.targetHostname length] == 0) {
-        self.targetHostname = DEFAULT_TARGET_HOSTNAME;
-    }
+    self.targetHostname = DEFAULT_TARGET_HOSTNAME;
 
     self.targetScheme = [cdvSettings cordovaSettingForKey:SETTING_TARGET_SCHEME];
     if([self.targetScheme length] == 0) {
